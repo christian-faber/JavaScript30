@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Intro</title>
+  </head>
+  <body>
+    <div id="root">
+      <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
+      <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+      <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+      <script type="text/babel">
+        const root = document.querySelector("#root");
+        const title = <h1 className="title">Hello World</h1>;
+        const tagline = <p className="subtitle">React JS</p>;
+        const element = (
+          <React.Fragment>
+            {title} {tagline}
+          </React.Fragment>
+        );
+        // const title = React.createElement("h1", {
+        //   children: "Hello World",
+        //   className: "title",
+        // });
+        // const tagline = React.createElement("p", {
+        //   children: "Vanilla JS",
+        //   className: "subtitle",
+        // });
+
+        // const element = React.createElement(React.Fragment, {
+        //   children: [title, tagline],
+        // });
+        // ReactDom.render(element, root);
+
+        // const element = document.createElement("h1");
+        // element.textContent = "Hello World";
+        // const tagline = document.createElement("p");
+        // tagline.textContent = "Vanilla JS";
+        // tagline.className = "subtitle";
+        // const root = document.querySelector("#root");
+        // root.append([element, tagline]);
+        // root.appendChild(tagline);
+      </script>
+    </div>
+  </body>
+</html>
